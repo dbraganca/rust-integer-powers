@@ -1,0 +1,31 @@
+cargo:rerun-if-env-changed=GMP_MPFR_SYS_CACHE
+$ mkdir -p "/home/diogo/work/ibps/target/debug/build/gmp-mpfr-sys-65f9d1638df48535/out/try_extended_key_value_attributes"
+$ cd "/home/diogo/work/ibps/target/debug/build/gmp-mpfr-sys-65f9d1638df48535/out/try_extended_key_value_attributes"
+$ printf '%s' "// try_ext"... > "/home/diogo/work/ibps/target/debug/build/gmp-mpfr-sys-65f9d1638df48535/out/try_extended_key_value_attributes/try_extended_key_value_attributes.rs"
+$ "rustc" "try_extended_key_value_attributes.rs" "--emit=dep-info,metadata" >& /dev/null
+$ printf '%s' "#![feature"... > "/home/diogo/work/ibps/target/debug/build/gmp-mpfr-sys-65f9d1638df48535/out/try_extended_key_value_attributes/try_extended_key_value_attributes.rs"
+$ "rustc" "try_extended_key_value_attributes.rs" "--emit=dep-info,metadata" >& /dev/null
+$ rm -r "/home/diogo/work/ibps/target/debug/build/gmp-mpfr-sys-65f9d1638df48535/out/try_extended_key_value_attributes"
+$ mkdir -p "/home/diogo/work/ibps/target/debug/build/gmp-mpfr-sys-65f9d1638df48535/out/try_unsafe_in_unsafe"
+$ cd "/home/diogo/work/ibps/target/debug/build/gmp-mpfr-sys-65f9d1638df48535/out/try_unsafe_in_unsafe"
+$ printf '%s' "// try_uns"... > "/home/diogo/work/ibps/target/debug/build/gmp-mpfr-sys-65f9d1638df48535/out/try_unsafe_in_unsafe/try_unsafe_in_unsafe.rs"
+$ "rustc" "try_unsafe_in_unsafe.rs" "--emit=dep-info,metadata" >& /dev/null
+cargo:rustc-cfg=unsafe_in_unsafe
+$ rm -r "/home/diogo/work/ibps/target/debug/build/gmp-mpfr-sys-65f9d1638df48535/out/try_unsafe_in_unsafe"
+$ mkdir -p "/home/diogo/work/ibps/target/debug/build/gmp-mpfr-sys-65f9d1638df48535/out/lib"
+$ mkdir -p "/home/diogo/work/ibps/target/debug/build/gmp-mpfr-sys-65f9d1638df48535/out/include"
+$ cp "/home/diogo/.cache/gmp-mpfr-sys/1.4/x86_64-unknown-linux-gnu/1.4.5/libmpc.a" "/home/diogo/work/ibps/target/debug/build/gmp-mpfr-sys-65f9d1638df48535/out/lib/libmpc.a"
+$ cp "/home/diogo/.cache/gmp-mpfr-sys/1.4/x86_64-unknown-linux-gnu/1.4.5/mpc.h" "/home/diogo/work/ibps/target/debug/build/gmp-mpfr-sys-65f9d1638df48535/out/include/mpc.h"
+$ cp "/home/diogo/.cache/gmp-mpfr-sys/1.4/x86_64-unknown-linux-gnu/1.4.5/libmpfr.a" "/home/diogo/work/ibps/target/debug/build/gmp-mpfr-sys-65f9d1638df48535/out/lib/libmpfr.a"
+$ cp "/home/diogo/.cache/gmp-mpfr-sys/1.4/x86_64-unknown-linux-gnu/1.4.5/mpfr.h" "/home/diogo/work/ibps/target/debug/build/gmp-mpfr-sys-65f9d1638df48535/out/include/mpfr.h"
+$ cp "/home/diogo/.cache/gmp-mpfr-sys/1.4/x86_64-unknown-linux-gnu/1.4.5/libgmp.a" "/home/diogo/work/ibps/target/debug/build/gmp-mpfr-sys-65f9d1638df48535/out/lib/libgmp.a"
+cargo:limb_bits=64
+$ cp "/home/diogo/.cache/gmp-mpfr-sys/1.4/x86_64-unknown-linux-gnu/1.4.5/gmp.h" "/home/diogo/work/ibps/target/debug/build/gmp-mpfr-sys-65f9d1638df48535/out/include/gmp.h"
+cargo:limb_bits=64
+cargo:out_dir=/home/diogo/work/ibps/target/debug/build/gmp-mpfr-sys-65f9d1638df48535/out
+cargo:lib_dir=/home/diogo/work/ibps/target/debug/build/gmp-mpfr-sys-65f9d1638df48535/out/lib
+cargo:include_dir=/home/diogo/work/ibps/target/debug/build/gmp-mpfr-sys-65f9d1638df48535/out/include
+cargo:rustc-link-search=native=/home/diogo/work/ibps/target/debug/build/gmp-mpfr-sys-65f9d1638df48535/out/lib
+cargo:rustc-link-lib=static=mpc
+cargo:rustc-link-lib=static=mpfr
+cargo:rustc-link-lib=static=gmp
