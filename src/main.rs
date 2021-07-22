@@ -44,7 +44,7 @@ fn main() {
                             kval1, 
                             kval2, 
                             kval3, 
-                            m3, m3, m3, 1, 2, 3, &mut cache));
+                            m1, m2, m3, 1, 2, 3, &mut cache));
     println!(
         "Time taken trian 1: {:#?}",
         Instant::now().duration_since(t1)
