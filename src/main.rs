@@ -17,7 +17,6 @@ struct TopologyCache {
                             usize, usize), Complex>,
     trian_cache: HashMap<(isize, isize, isize, 
                             usize, usize, usize), Complex>,
-    // Possibly add here 
     ltrian_cache: HashMap<(isize, isize, isize, isize, isize, isize, usize, usize, usize), Complex>,
     // Also possibly add in bubble_cache and trian_cache a index corresponding to the k - 1, 2 or 3
 }
