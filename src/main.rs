@@ -18,7 +18,7 @@ struct TopologyCache {
     trian_cache: HashMap<(isize, isize, isize, 
                             usize, usize, usize), Complex>,
     // Possibly add here 
-    // ltrian_cache: HashMap<(isize, isize, isize, isize, isize, isize, usize, usize, usize), Complex>,
+    ltrian_cache: HashMap<(isize, isize, isize, isize, isize, isize, usize, usize, usize), Complex>,
     // Also possibly add in bubble_cache and trian_cache a index corresponding to the k - 1, 2 or 3
 }
 
@@ -27,6 +27,7 @@ fn main() {
         // tadpole_cache: HashMap::new(),
         bubble_cache: HashMap::new(),
         trian_cache: HashMap::new(),
+        ltrian_cache: HashMap::new(),
     };
 
     let m1 = &Complex::with_val(PREC, (0.034, 0.069));
